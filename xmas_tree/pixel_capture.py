@@ -12,3 +12,4 @@ for i in range(NUM_LEDS):
     cv2.imshow("frame", im)
     cv2.waitKey(50)
     cv2.imwrite(f"images/{i:05d}.png", im)
+    light_client.set_led_color(i, 0x000000)
